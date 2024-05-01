@@ -81,6 +81,8 @@ h5 {font-size:24px;}
 .tier-sep {padding:10px 0;}
 .tier-sep-b h4 {margin-top:25px;text-align:right;}
 
+#signup {}
+
 .hero {background:url(../img/bg-1.webp) center top no-repeat;min-height:818px;}
 .hero h1, .closer h1 {line-height:0.85;margin-top:40px;letter-spacing:-2px;padding-left:20px;}
 .hero h1 .s1, .closer h1 .s1 {font-size:72px;}
