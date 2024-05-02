@@ -1,4 +1,4 @@
-body {font-family: 'Open Sans', sans-serif;font-weight:500;font-size:24px;background:#1f1e1e;}
+body {font-family: 'Open Sans', sans-serif;font-weight:500;font-size:24px;background:url(../img/body.webp) center top no-repeat #1f1e1e;background-size: 100%;}
 a, a:hover, a:visited, a:active {text-decoration: none;}
 
 .img-responsive {margin:0 auto;}
@@ -332,7 +332,7 @@ h5 {font-size:24px;}
 /* END SLIDER CSS END SLIDER CSS END SLIDER CSS END SLIDER CSS */
 
 
-@media (min-width: 1921px) {.ultra-wrap {-webkit-box-shadow:0 0 50px rgba(0,0,0,0.35); box-shadow:0 0 50px rgba(0,0,0,0.35);overflow:hidden;}}
+@media (min-width: 1921px) {.ultra-wrap {-webkit-box-shadow:0 0 50px rgba(154, 18, 18, 0.25); box-shadow:0 0 50px rgba(154, 18, 18, 0.25);overflow:hidden;}}
 @media (max-width: 1199px) {
 	body {font-size:18px;}
 	.type-mark::after {height: 9px;bottom: -6px;}
