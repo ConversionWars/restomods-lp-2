@@ -59,8 +59,9 @@ h5 {font-size:24px;}
 	height:112px;
 	background-size:100%;
 	bottom:60px;
-	right:94%;
+	right:80%;
 }
+.l-arrow, .d45-arrow {transition:0.5s;}
 
 .type-mark {position:relative;}
 .type-mark::after {
@@ -88,7 +89,7 @@ h5 {font-size:24px;}
     border: solid 4px #ed3237;
     border-color: #ed3237 transparent transparent transparent;
     border-radius: 50%;
-	opacity:0.5;
+	opacity:0.65;
 }
 
 .jcd-underline {position:relative;}
@@ -103,14 +104,79 @@ h5 {font-size:24px;}
 	left:0;
 }
 .tier-sep {padding:10px 0;}
-.tier-sep-b h4 {margin-top:25px;text-align:right;}
+.tier-sep-b h4 {margin-top:12px;text-align:right;}
 
-.signup {
+/* ANIMATED SIGNUP BORDER */
+@property --gradient-angle {
+	syntax: "<angle>";
+	initial-value: 0deg;
+	inherits: false;
+  }
+  
+  :root {
+	--clr-1: #1f1e1e;
+	--clr-2: #262525;
+	--clr-3: #21b4bf;
+	--clr-4: #80bbbf;
+	--clr-5: #ed3237;
+	--clr-6: #eedb28;
+  }  
+  .signup::before,
+  .signup::after {
+	content: "";
+	position: absolute;
+	inset: -3px;
+	background: conic-gradient(
+	  from var(--gradient-angle),
+	  var(--clr-3),
+	  var(--clr-1),
+	  var(--clr-1),
+	  var(--clr-6),
+	  var(--clr-6),
+	  var(--clr-1),
+	  var(--clr-1),
+	  var(--clr-3),
+	  var(--clr-3),
+	  var(--clr-1),
+	  var(--clr-1),
+	  var(--clr-6),
+	  var(--clr-6),
+	  var(--clr-1),
+	  var(--clr-1),
+	  var(--clr-3)
+	);
+	border-radius: inherit;
+	animation: rotation 5s linear infinite;
+	z-index: -2;
+  }
+  
+  .signup::after {
+	filter: blur(1.5rem);
+  }
+  
+  @keyframes rotation {
+	0% {
+	  --gradient-angle: 0deg;
+	}
+	100% {
+	  --gradient-angle: 360deg;
+	}
+  }
+/* END ANIMATED SIGNUP BORDER */
+.signup-overlay {
 	background:url(../img/signup-bg.webp) bottom center no-repeat #1f1e1e;
 	background-size:100%;
-	border-radius:25px;
+	border-radius:inherit;
 	padding:15px;
 	color:#e9e9de;
+}
+.hero .signup, .closer .signup {
+	position:absolute;
+	top:40px;
+	right:0;
+	z-index:3;
+	padding:0;
+	border-radius:25px;
 }
 .signup .cta {position:relative;}
 .signup .cta .cta-btn::after {
@@ -121,7 +187,7 @@ h5 {font-size:24px;}
 	background:url(../img/dbl-arrow.png) center top no-repeat;
 	background-size:100%;
 	top:50%;
-	right:90%;
+	right:85%;
 	transform:translateY(-50%);
 	pointer-events:none;
 }
@@ -226,12 +292,6 @@ h5 {font-size:24px;}
 .hero h1, .closer h1 {line-height:0.85;margin-top:40px;letter-spacing:-2px;padding-left:20px;}
 .hero h1 .s1, .closer h1 .s1 {font-size:72px;-webkit-text-shadow:2px 2px 0 rgba(255,255,255,0.9);text-shadow:2px 2px 0 rgba(255,255,255,0.9)}
 .hero h1 .s2, .closer h1 .s2 {font-size:48px;-webkit-text-shadow:2px 2px 0 rgba(255,255,255,0.9);text-shadow:2px 2px 0 rgba(255,255,255,0.9)}
-.hero .signup, .closer .signup {
-	position:absolute;
-	top:40px;
-	right:0;
-	z-index:3;
-}
 .hero .vid-con {
 	background:#1f1e1e;
 	padding:15px;
@@ -253,8 +313,8 @@ h5 {font-size:24px;}
 	background-size:100%;
 }
 
-.tes-wrapper {padding:0;padding-top:20px;background:url(../img/checker.png) center top repeat-x #1f1e1e;}
-.tes-wrapperb {padding:0;padding-bottom:20px;background:url(../img/checker.png) center bottom repeat-x;}
+.tes-wrapper {padding:0;padding-top:10px;background:url(../img/checker.png) center top repeat-x #1f1e1e;}
+.tes-wrapperb {padding:0;padding-bottom:10px;background:url(../img/checker.png) center bottom repeat-x;}
 .tes-slider .slide {padding:0;}
 
 .tier-2 {background:url(../img/bg-2a.webp) center top no-repeat #21b4bf;min-height:818px;}
@@ -469,7 +529,12 @@ h5 {font-size:24px;}
 .tier-2 .scroller__inner img {border: 8px solid #e9e9de;border-radius:10px;}
 /* END SLIDER CSS END SLIDER CSS END SLIDER CSS END SLIDER CSS */
 
-
+@media (min-width: 768px) {
+	.cta-btn::after {transition: 0.5s;}
+	.signup .cta .cta-btn:hover:after {right:80%;}
+	.tier-sep-b .cta:hover .d45-arrow {bottom: 50px;rotate: -5deg;}
+	.tier-4a .cta:hover .l-arrow {right:75%;}
+}
 @media (min-width: 1921px) {.ultra-wrap {-webkit-box-shadow:0 0 50px rgba(154, 18, 18, 0.25); box-shadow:0 0 50px rgba(154, 18, 18, 0.25);overflow:hidden;}}
 @media (max-width: 1199px) {
 	body {font-size:18px;}
