@@ -1,4 +1,4 @@
-<img src="img/signup-top.webp" class="img-responsive" />
+<img src="img/signup-top.webp" class="img-responsive hidden-xs" />
 <div class="syspot">
     <div class="sy-left">
         <img src="img/black-cd.png" class="img-responsive" />

@@ -302,6 +302,7 @@ h5 {font-size:24px;}
 	box-shadow:0 0 100px rgba(245,236,223,0.3);
 }
 .hero .vid-box {
+	-webkit-box-shadow:0 0 50px rgba(33,180,191,0.15);
 	box-shadow:0 0 50px rgba(33,180,191,0.15);
 }
 .hero .adj-1 {margin-top:30px;}
@@ -600,13 +601,20 @@ h5 {font-size:24px;}
 	body {font-size:14px;}
 	.cta-btn {height: 50px;line-height: 50px;font-size: 20px;}
 	h1 {font-size: 20px;}
+	.signup .sy-1 {font-size: 14px;margin-top:7px;}
+	signup .sy-2 {font-size: 12px;}
+	.fast-mark::before {bottom: -5px;}
+	.signup .sy-left {margin-left: 5px;}
+	.signup .field-con input {height: 30px;font-size: 14px;}
+	signup .field-con label {font-size: 14px;}
+	.signup .cta .cta-btn::after {width: 116px;height: 60px;}
 	.hero h1 .s1, .closer h1 .s1 {font-size: 36px;}
 	.hero h1 .s2, .closer h1 .s2 {font-size: 24px;}
 	h2 {font-size: 32px;}
 	h3 {font-size: 26px;}
 	h4 {font-size: 16px;}
 	h5 {font-size: 14px;}
-	.type-mark::after {height: 6px;bottom: -2px;}
+	.type-mark::after {height: 6px;bottom: -3px;}
 	.hero {min-height: 532px;background-size: 1250px;}
 	.tes-wrapperb .scroller__inner img {width: 150px;}
 	.tier-2 .scroller__inner img {width: 320px;}
@@ -644,7 +652,13 @@ h5 {font-size:24px;}
 @media (max-width: 767px) {
 	body {font-size:14px;}
 	.cta-btn {letter-spacing: -2px;}
-	.hero .signup, .closer .signup {position: relative;top: auto;right: auto;padding: 15px;}
+	.t-shad {-webkit-text-shadow: 3px 2px 0 #1f1e1e;text-shadow: 3px 2px 0 #1f1e1e;}
+	jcd-underline::after {-webkit-box-shadow: 3px 2px #1f1e1e;box-shadow: 3px 2px #1f1e1e;}
+	.hero .signup, .closer .signup {position: relative;top: auto;right: auto;padding: 5px;}
+	.signup::before, .signup::after {inset: 0;}
+	.signup-overlay {padding:10px;}
+	.signup .sy-3 {text-align: left;width: 54%;float: right;margin-top: -25px;}
+	.hero .signup {margin-top:-100px;}
 	.hero {min-height: auto;background-size: 1200px;background-position: left -150px top 0;background-image:none;}
 	.hero .adj-1 {margin-top: 5px;width: 200px;margin-bottom:10px;}
 	.hero .adj-2 {width: 100%;margin: 5px 0px;}
@@ -655,19 +669,36 @@ h5 {font-size:24px;}
 	.hero h1 .s1, .closer h1 .s1 {font-size: 36px;}
 	.hero h1 .s2, .closer h1 .s2 {font-size: 48px;}
 	.hero .adj-3 {line-height:1.2;}
-	.hero .vid-con {background: #524f4f;padding-bottom: 10px;padding-top: 1px;width: calc(100% - 30px);margin: -100px auto 0;padding-left: 10px;padding-right: 10px;}
+	.hero .vid-con {
+		background: #1f1e1e;
+		padding-bottom: 10px;
+		padding-top: 1px;
+		width: 100%;
+		margin: 0 auto 0;
+		padding-left: 0;
+		padding-right: 0;
+		-webkit-box-shadow:none;
+		box-shadow:none;
+	}
+	.hero .vid-box {
+		-webkit-box-shadow:none;
+		box-shadow:none;
+		border-top-left-radius:15px;
+		border-top-right-radius:15px;
+		overflow:hidden;
+	}
 	.type-mark::after {height:8px;bottom:-6px;}
 	.hero .cash-hand {width:60px;height:75px;right:0;top:23px;}
 	.tier-2 {background-size: 1200px;background-position: left top;}
 	.tier-2b {background-size: 1600px;background-position: right -230px bottom 0;padding-bottom:40px;}
 	.tier-2 .feat-car {border-left: none;border-right: none;}
-	.tier-2 .feat-deats {border-top: 8px solid #e9e9de;border-radius: 10px;min-height:170px;}
+	.tier-2 .feat-deats {border-top: 8px solid #e9e9de;border-radius: 10px;min-height: 170px;border-left: 8px solid #e9e9de;}
 	.tier-2 .ico-holder {height: 80px;}
 	.tier-2 .ico-holder img {margin: 0 auto;padding: 10px 30px 0;}
 	.tier-2 .txt-holder {padding-top: 0px;}
 	.tier-2 .col-sm-2 {padding: 5px;}
 	.jcd-underline::after {height: 4px;bottom: -3px;}
-	.tier-2 .adj-1::after {width: 100px;height: 53px;top: -50px;left: -10px;}
+	.tier-2 .adj-1::after {width: 100px;height: 53px;top: -62px;left: -10px;}
 	.tier-2 .scroller__inner img {border-left: none;border-right: none;}
 	.tier-2 ul {padding-top: 0px;padding-bottom: 5px;padding-left: 20px;}
 	.tier-2 ul.adj-2::after {height: 190%;left: 0px;}
@@ -718,6 +749,8 @@ h5 {font-size:24px;}
 @media (max-width: 411px) {
 	h2 {font-size: 20px;}
 	h3 {font-size: 22px;}
+	.signup .sy-3 {width: 53.5%;margin-top: -23px;}
+	.closer .signup .sy-3 {display:none;}
 	.tier-2 .txt-holder {font-size: 11px;}
 	.tier-2 .ico-holder {height: 65px;}
 	.tier-2 .feat-deats {min-height: 150px;}
@@ -725,7 +758,8 @@ h5 {font-size:24px;}
 }
 @media (max-width: 389px) {
 	h4 {font-size: 12px;}
-	.hero .signup, .closer .signup {padding: 0;}
+	.hero .signup, .closer .signup {padding: 3px;}
+	.signup .sy-3 {margin-top: -19px;font-size: 12px;}
 	.tier-2 .ico-holder img {padding: 10px 25px 0;}
 	.tier-2 .txt-holder {font-size: 10px;}
 	.tier-2 .scroller__inner img {width: 220px;}
@@ -735,6 +769,7 @@ h5 {font-size:24px;}
 }
 @media (max-width: 359px) {
 	h3 {font-size: 18px;}
+	.signup .sy-3 {margin-top: -13px;font-size: 11px;}
 	.tier-2 .feat-deats {border: 5px solid #e9e9de;min-height: 120px;}
 	.tier-2 .ico-holder {height: 55px;}
 	.tier-3 .winnerbox .winner .feat-vehicle {width: calc(100% - 30px);}

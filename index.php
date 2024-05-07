@@ -15,7 +15,7 @@
 					<span class="s2 adj-3">And</span><br class="visible-xs"/> $20,000 <br class="visible-xs"/>Cash</h1>
 				</div>
 				<img src="img/hero-m.webp" class="img-responsive visible-xs" />
-				<div class="col-sm-7 col-sm-offset-2 vid-con">
+				<div class="col-sm-7 col-sm-offset-2 vid-con hidden-xs">
 					<img src="img/vid-partners.png" class="img-responsive adj-2" />
 					<div class="vid-box">
 						<img src="img/video.webp" class="img-responsive" />
@@ -23,6 +23,12 @@
 				</div>
 				<div class="col-sm-4 signup">
 					<div class="signup-overlay">
+						<div class="vid-con visible-xs">							
+							<div class="vid-box">
+								<img src="img/video.webp" class="img-responsive" />
+							</div>
+							<img src="img/vid-partners.png" class="img-responsive adj-2" />
+						</div>
 						<?php include('template/signup-contents.php'); ?>
 					</div>
 				</div>
