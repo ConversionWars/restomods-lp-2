@@ -17,6 +17,7 @@ a, a:hover, a:visited, a:active {text-decoration: none;}
 .l-blue {color:#80bbbf;}
 
 .bold {font-weight:700;}
+.t-shad {-webkit-text-shadow:4px 3px 0 #1f1e1e;text-shadow:4px 3px 0 #1f1e1e;}
 
 h1, h2, h3, h4, h5, .cta-btn, ul li .s1, .feat-vehicle, .hear-more, .red-alert, .white-bar, .signup .sy-2 {font-family: "Syncopate", sans-serif;font-weight:700;font-style:normal;text-transform:uppercase;line-height:1.0;}
 h1 {font-size:32px;}
@@ -102,6 +103,8 @@ h5 {font-size:24px;}
 	border-radius:4px;
 	bottom:-4px;
 	left:0;
+	-webkit-box-shadow:4px 3px #1f1e1e;
+	box-shadow:4px 3px #1f1e1e;
 }
 .tier-sep {padding:10px 0;}
 .tier-sep-b h4 {margin-top:12px;text-align:right;}
@@ -319,7 +322,7 @@ h5 {font-size:24px;}
 
 .tier-2 {background:url(../img/bg-2a.webp) center top no-repeat #21b4bf;min-height:818px;}
 .tier-2b {background:url(../img/bg-2b.webp) center bottom no-repeat;min-height:818px;padding-bottom:50px;}
-.tier-2 .feat-deats {background:#80bbbf;border:8px solid #e9e9de;border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top:none;min-height:250px;}
+.tier-2 .feat-deats {background:#80bbbf;border:8px solid #1f1e1e;border-bottom-left-radius:10px;border-bottom-right-radius:10px;border-top:none;min-height:250px;}
 .tier-2 .ico-holder {height:100px;}
 .tier-2 .ico-holder img {margin:0 auto;padding:30px 0 0;}
 .tier-2 .txt-holder {font-weight:800;font-size:16px;text-align:center;text-transform:uppercase;padding-top:30px;}
@@ -491,7 +494,7 @@ h5 {font-size:24px;}
 	transform:translateX(-50%);
 	z-index:3;
 }
-.closer .signup {top:auto;bottom:40px;}
+.closer .signup {top:auto;bottom:10px;}
 
 
 /* SLIDER CSS SLIDER CSS SLIDER CSS SLIDER CSS SLIDER CSS */
@@ -533,7 +536,7 @@ h5 {font-size:24px;}
 	.cta-btn::after {transition: 0.5s;}
 	.signup .cta .cta-btn:hover:after {right:80%;}
 	.tier-sep-b .cta:hover .d45-arrow {bottom: 50px;rotate: -5deg;}
-	.tier-4a .cta:hover .l-arrow {right:75%;}
+	.tier-4a .cta:hover .l-arrow, .tier-2.pos .cta:hover .l-arrow {right:75%;rotate: -5deg;}
 }
 @media (min-width: 1921px) {.ultra-wrap {-webkit-box-shadow:0 0 50px rgba(154, 18, 18, 0.25); box-shadow:0 0 50px rgba(154, 18, 18, 0.25);overflow:hidden;}}
 @media (max-width: 1199px) {
@@ -548,7 +551,11 @@ h5 {font-size:24px;}
 	h3 {font-size: 36px;}
 	h4 {font-size: 24px;}
 	h5 {font-size: 18px;}
-	.cta-btn {height: 60px;line-height: 60px;font-size: 30px;}
+	.signup p {padding:0;font-size:10px;margin: 0 0 5px;}
+	.signup .field-con.adj-fc {margin-bottom: 20px;}
+	.cta-btn {height: 60px;line-height: 60px;font-size: 26px;}
+	.signup .cta .cta-btn::after {width: 136px;height: 70px;}
+	.hero .signup {top:10px;}
 	.hero {min-height: 682px;background-size: 1600px;}
 	.hero .cash-hand {width: 90px;height: 113px;right: 33%;top: 90px;}
 	.tes-wrapperb .scroller__inner img {width:170px;}
@@ -587,7 +594,7 @@ h5 {font-size:24px;}
     	box-shadow: 404px 0 0 #e9e9de;
 	}
 	.closer .close-girl {bottom: -10px;left: 30px;width: 280px;}
-	.closer .signup {top: auto;bottom: -20px;}
+	.closer .signup {top: auto;bottom: -35px;}
 }
 @media (max-width: 991px) {
 	body {font-size:14px;}

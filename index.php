@@ -128,7 +128,7 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-sm-10 col-sm-offset-2 adj-1">
-					<h2 class="white">The <span class="jcd-underline">Build</span> Sheet</h2>
+					<h2 class="white t-shad">The <span class="jcd-underline">Build</span> Sheet</h2>
 				</div>
 				<div class="col-sm-5 col-sm-offset-1">
 					<ul class="adj-2">
@@ -198,7 +198,7 @@
 					<img src="img/t3-cup.png" class="img-responsive" />
 				</div>
 				<div class="col-sm-12 adj-1">
-					<h2 class="white text-right">Previous <span class="jcd-underline">Winners</span></h2>
+					<h2 class="white text-right t-shad">Previous <span class="jcd-underline">Winners</span></h2>
 				</div>
 			</div>
 			<div class="row">
@@ -294,7 +294,7 @@
 
 					<p>Every three months we give away a Restored and Modified <span class="red">Classic American Muscle</span> Car.</p>
 
-					<p>These RestoMods have the classic style of the greatest era of American cars with modern touches that make them <span class="red">better than new</span>.</p>
+					<p>These RestoMods have the classic style of the <span class="red">greatest era</span> of American cars with modern touches that make them <span class="red">better than new</span>.</p>
 				</div>
 			</div>
 			<div class="row">

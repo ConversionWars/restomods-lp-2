@@ -13,7 +13,7 @@
 <img src="img/signup-contact.png" class="img-responsive adj-contact" />
 <form>
     <div class="field-con">
-        <input type="textfield" placeholder="John"required="required">
+        <input type="textfield" placeholder="John"required="required" autofocus>
         <label>First Name</label>
     </div>
     <div class="field-con">
