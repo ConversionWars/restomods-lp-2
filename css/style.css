@@ -704,7 +704,8 @@ h5 {font-size:24px;}
 	}
 	.type-mark::after {height:8px;bottom:-6px;}
 	.hero .cash-hand {width:60px;height:75px;right:0;top:23px;}
-	.tes-wrapperb .scroller[data-animated="true"] .scroller__inner {animation:none;}
+	.tes-wrapperb .scroller[data-animated="true"] .scroller__inner {animation:none;gap: 3px;}
+	.tes-wrapperb .scroller__inner img {width: 70px;}
 	.tier-2 {background-size: 1200px;background-position: left top;}
 	.tier-2b {background-size: 1600px;background-position: right -230px bottom 0;padding-bottom:40px;}
 	.tier-2 .feat-car {border-left: none;border-right: none;margin-bottom:5px;}
