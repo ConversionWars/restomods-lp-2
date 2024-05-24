@@ -63,6 +63,12 @@
 			<div class="row">
 				<div class="col-sm-12 feat-car">
 					<img src="img/t2-img-1.webp" class="img-responsive" />
+					<div class="car-name-con">
+						<span class="white">1969</span> Chevy Chevelle
+					</div>
+					<div class="pro-t-con">
+						<span class="white">Pro</span> <br />Touring
+					</div>
 				</div>
 				<div class="col-xs-4 col-sm-2 col-sm-offset-1">
 					<div class="feat-deats">
@@ -405,7 +411,7 @@
 					<span class="s2">1968</span> <br class="visible-xs"/><span class="red">Dodge <br class="visible-xs"/><span class="type-mark">Charger</span></span> <br /><span class="hidden-xs">&nbsp;&nbsp;&nbsp;</span><span class="s2 adj-3">And</span> <br class="visible-xs"/>$20,000 <br class="visible-xs"/>Cash</h1>
 				</div>
 				<div class="col-sm-7 white-bar hidden-xs">
-					This 1968 Dodge Charger<br /> is the 25th sweepstakes<br /> car and you can<br /> <span class="red">WIN IT HERE</span>
+					This 1968 Dodge Charger<br /> is the 25th sweepstakes<br /> car and you can<br /> <span class="red">WIN IT <span class="fast-mark">HERE</span></span>
 				</div>
 				<div class="col-sm-5 white-bar adj-3 hidden-xs"></div>
 			</div>
